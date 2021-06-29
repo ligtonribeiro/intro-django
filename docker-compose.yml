@@ -7,5 +7,9 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: luanny12
       POSTGRES_DB: alura-receita
+    volumes:
+      - pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+volumes:
+  pgdata:
