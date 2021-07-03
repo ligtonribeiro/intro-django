@@ -4,7 +4,7 @@ from .models import Pessoa
 
 class ListandoPessoas(admin.ModelAdmin):
     list_display = ('id', 'nome', 'email')
-    list_display_link = ('id', 'nome')
+    list_display_links = ('id', 'nome')
     search_fields = ('nome',)
     list_per_page = 10
 
